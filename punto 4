@@ -1,0 +1,54 @@
+int A = 3;
+int B = 4;
+int C = 5;
+int D = 6;
+int luz=255;
+int inluz= 0;
+int dt = 2500;
+
+void setup() {
+ 
+  pinMode(A, OUTPUT);
+  pinMode(B, OUTPUT);
+  pinMode(C, OUTPUT);
+  pinMode(D, OUTPUT);
+}
+
+void loop() {
+  analogWrite(A,inluz); 
+  analogWrite(B,inluz);  
+  analogWrite(C,inluz);  
+  analogWrite(D,inluz);  
+  delay (dt);        
+}
+
+ analogWrite(A,inluz); 
+ analogWrite(B,inluz);  
+ analogWrite(C,inluz);  
+ analogWrite(D,luz);  
+ delay (dt);
+}
+
+ analogWrite(A,inluz); 
+  analogWrite(B,inluz);  
+  analogWrite(C,luz);  
+  analogWrite(D,inluz);  
+  delay (dt);        
+}
+
+ analogWrite(A,inluz); 
+  analogWrite(B,inluz);  
+  analogWrite(C,luz);  
+  analogWrite(D,luz);  
+  delay (dt);
+
+}
+
+  analogWrite(A,inluz); 
+  analogWrite(B,inluz);  
+  analogWrite(C,luz);  
+  analogWrite(D,luz);  
+  delay (dt);   
+
+  }
+ }
