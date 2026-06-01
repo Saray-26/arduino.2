@@ -1,0 +1,22 @@
+int V2;
+int analogval=A0;
+int sonido 7;
+int dt=500;
+
+ void setup(){
+  Serial.begin(9600);
+  pinMode(sonido, OUTPUT);
+  pinMode(analogval,INPUT);
+  
+ }
+
+ void loop() {
+  V2=analogRead(analogval);
+  if(V2>400){
+  digitalWrite(sonido,HIGH);
+  Serial.println(V2);
+  delay(dt);
+  }
+ }
+
+ //https://youtu.be/ytoQbKD2hSM
