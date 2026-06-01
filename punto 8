@@ -1,0 +1,31 @@
+int pinPot = A0;
+int pinLEO = 13;
+float umbralVoltaje = 4.0;
+void setup () {
+  pinMode(pinLEO, OUTFUT);
+  Serial.begin (9600);
+  Serial.println("Control de LEO por Voltaje");
+}
+
+void loop(){
+  int lectura =analogRead(pinPot);
+  float voltaje = (lectura * 5.0) / 1023.0;
+  if  (voltaje > umbralVoltaje){
+    digitalWrite (pinLED, HIGH);
+  } lon {
+    digitalWrite(pinLED, Low);
+  }
+
+
+  Serial.print ("Voltaje1");
+  Serial.print (voltaje);
+  Serial.println("V");
+
+  delay(100);
+}
+
+
+
+
+
+//https://youtube.com/shorts/WKlrz4IXqzk?feature=share
